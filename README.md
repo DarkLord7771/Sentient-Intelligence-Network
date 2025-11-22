@@ -134,7 +134,7 @@ Useful for tamper detection and trusted clients.
 ## **Quick Start**
 
 ```python
-from SINlite.sinlite_kernel import run_once
+from SINlite.core.sinlite_kernel import run_once
 
 state = None
 state, full_state = run_once({"input": "hello world"}, state)
@@ -145,8 +145,8 @@ or with envelope support:
 
 ```python
 from nacl.signing import SigningKey
-from SINlite.sealed_input import seal_payload
-from SINlite.sinlite_kernel import run_once_with_envelope
+from SINlite.core.sealed_input import seal_payload
+from SINlite.core.sinlite_kernel import run_once_with_envelope
 
 signer = SigningKey.generate()
 envelope = seal_payload({"input": "hello"}, signer)
@@ -159,7 +159,7 @@ construct, state = run_once_with_envelope(envelope, verify_key=signer.verify_key
 ## **Bloom Export**
 
 ```python
-from SINlite.soft_bloom_export import export_soft_bloom
+from SINlite.core.soft_bloom_export import export_soft_bloom
 
 export, state = export_soft_bloom({"input": "some text"})
 print(export)

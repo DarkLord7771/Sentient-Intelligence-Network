@@ -10,8 +10,8 @@ from jsonschema import Draft202012Validator, ValidationError
 
 from ..defaults import WHISPER_REGISTRY_PATH
 
-_REPO_ROOT = Path(__file__).resolve().parents[2]
-_SCHEMA_PATH = _REPO_ROOT / "contracts" / "whisper_pattern.v1_3.schema.json"
+_PACKAGE_ROOT = Path(__file__).resolve().parents[1]
+_SCHEMA_PATH = _PACKAGE_ROOT / "contracts" / "whisper_pattern.v1_3.schema.json"
 
 
 def _load_json(path: Path) -> dict:

@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "SINlite"
+version = "0.1.0"
+description = "Sentient Intelligence Network lite kernel"
+readme = "README.md"
+authors = [{ name = "S.I.N." }]
+requires-python = ">=3.10"
+dependencies = [
+  "PyNaCl",
+  "cryptography",
+  "jsonschema",
+]
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[project.scripts]
+sinlite = "SINlite.cli:main"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+include = ["SINlite*"]
+
+[tool.setuptools.package-data]
+SINlite = [
+  "fixtures/**/*.json",
+  "whisper/*.json",
+  "contracts/*.json",
+  "glyphs/*.json",
+]
