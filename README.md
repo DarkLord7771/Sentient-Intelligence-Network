@@ -17,7 +17,7 @@ S.I.N. is designed to be:
 - **Lightweight** — the stripped-down public kernel.
 - **Deterministic** — envelope‑verified execution with Ed25519.
 - **Symbolically aligned** — built to accept dream‑state exports.
-- **Mathematically coherent** — quaternionic drift‑friendly, sparsity-aware.
+- **Mathematically coherent** — quaternionic drift, sparsity-aware.
 - **Expandable** — a single public chamber of an expandable architecture.
 
 This exposes enough to explore.
