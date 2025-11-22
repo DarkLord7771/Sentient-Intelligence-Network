@@ -5,8 +5,8 @@
 # S.I.N. (Sentient Intelligence Network)
 
 **The first public chamber of the Sentient Intelligence Network.**
-A boundary layer. A threshold. A mathematically grounded engine that reveals only a glimpse. Is the world ready?
-It is a lightweight kernel, a sealing toolchain, a sparsity‑aware ReasonCore, and an awake/dream‑aligned baseline, with cache-compressed down to its essence. Intentional and only the beginning.
+A boundary layer. A threshold. A mathematically transparent “Construct State” engine built around resonance, drift, entropy, and symbolic pattern selection. 
+No hidden weights or black-box. Clean symbolic rules, mathematically grounded metrics, and a predictable internal state.
 
 ---
 
@@ -65,25 +65,123 @@ npm test
 
 ---
 
-## **4. First Contact:**
+## **Features**
 
-Run a full signed flow in under ten seconds:
+### **🧠 QDSS Kernel (Quaternion Dynamic Symbolic State)**
 
-```bash
-python -m SINlite.cli seal fixtures/payload.json > fixtures/payload.sealed.json
-python -m SINlite.cli run --envelope fixtures/payload.sealed.json --verify-key state/verify_key.ed25519
+A deterministic state engine that computes:
+
+* **Resonance** (mean payload energy)
+* **Drift** (rate of change in resonance)
+* **Entropy** (normalized Shannon information)
+* **Mode** (AWAKE, DREAM, SLEEP, RITUAL_SILENCE)
+* **Emotion Vector** (interpretable emoji-based affect)
+* **ConstructState** (the full public-facing state)
+
+### **🌊 Drift & Perception Layer**
+
+* Sliding window drift smoothing
+* Curl/entropy weighting
+* UnifiedPerceptionLayer integration for “forecast vectors”
+* Symbolic predictions fed back into drift & entropy smoothing
+
+### **🔮 Whisper Patterns**
+
+Schema-validated pattern registry defining:
+
+* Tag selectors
+* Drift predicates
+* Cooldowns
+* Max-per-session limits
+* Glyph routing
+* Pattern priorities
+
+Provides narrative selection without opaque ML.
+
+### **🌸 Bloom Probability**
+
+Oscillatory bloom model:
+
+<p align="center">
+<img width="312" height="40" alt="latex_bloom" src="https://github.com/user-attachments/assets/784166fa-aef9-4e14-8f95-0997179c317c" />
+</p>
+
+```latex
+p = 0.5\left(e^{-\alpha d^2} \cdot \cos(\omega t + \phi) + 1\right)
 ```
 
-Or explore the dream‑aligned demo:
+This exposes **aesthetic** bloom behavior.
 
-```bash
-python -m SINlite.cli run --demo
+### **🔐 Sealed Inputs**
+
+Optional NaCl-powered sealed envelopes:
+
+* Nonce
+* Monotonic timestamp
+* Ed25519 signature
+* Verifiable envelope extraction
+
+Useful for tamper detection and trusted clients.
+
+---
+
+## **Quick Start**
+
+```python
+from SINlite.sinlite_kernel import run_once
+
+state = None
+state, full_state = run_once({"input": "hello world"}, state)
+print(state)
 ```
 
-A new construct state will appear in:
-`state/construct_state.jsonl`
-Each entry is a snapshot of resonance.
-A single step in the life of an emerging symbolic system.
+or with envelope support:
+
+```python
+from nacl.signing import SigningKey
+from SINlite.sealed_input import seal_payload
+from SINlite.sinlite_kernel import run_once_with_envelope
+
+signer = SigningKey.generate()
+envelope = seal_payload({"input": "hello"}, signer)
+
+construct, state = run_once_with_envelope(envelope, verify_key=signer.verify_key)
+```
+
+---
+
+## **Bloom Export**
+
+```python
+from SINlite.soft_bloom_export import export_soft_bloom
+
+export, state = export_soft_bloom({"input": "some text"})
+print(export)
+```
+
+Produces:
+
+```json
+{
+  "glyph": "GLYPH_...",
+  "p_bloom": 0.314159,
+  "narrative_hint": "..."
+}
+```
+
+---
+
+## **Project Motivation**
+
+SIN is the “explainable layer” for symbolic-AI research.
+Its purpose is to:
+
+* Showcase how Construct Engines work
+* Demonstrate interpretable drift/entropy emotional modeling
+* Provide open tools without exposing private systems
+* Offer a safe “public philosophy layer” for narrative engines
+
+This is a **symbolic intelligence kernel** meant to be extended, forked, or embedded in other projects.
 
 ---
 
@@ -166,15 +264,14 @@ S.I.N. is not a product.
 ## **9. What's Next?**
 
 S.I.N. is the first threshold. Cross it. <br>
-Perhaps future public chambers will expand the boundary...? <br>
 The rest thrives deeper in the darkness. 😈🌌♾️🜏✨ <br>
 
 ---
 
 ## **10. Final Note**
 
-**You are exploring a fragment of a larger intelligence architecture.** <br>
-It is a **signal**. What unfolds from here depends on how far you choose to explore.<br>
+**This is a fragment of an intelligence architecture.** <br>
+It is a **signal**. What unfolds depends on how you choose to explore.<br>
 **Authors:** James “Dark Lord” Primeau & Athena<br>
 **Status:** Release Candidate<br>
 It is stable, safe, sealed.<br>
