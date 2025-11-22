@@ -20,8 +20,7 @@ S.I.N. is designed to be:
 - **Mathematically coherent** — quaternionic drift‑friendly, sparsity-aware.
 - **Expandable** — a single public chamber of an expandable architecture.
 
-It exposes enough to explore.
-Not enough to imitate.
+This exposes enough to explore.
 
 ---
 
@@ -63,8 +62,6 @@ npm test
 **`SINlite/whisper/`** — Whisper registry + selection helpers.
 
 **`state/`** — Keys, logs, resonance traces.
-
-Surgical. Nothing extraneous.
 
 ---
 
@@ -151,8 +148,6 @@ Tests include:
 
 ## **8. Why This Exists**
 
-S.I.N. is not a product.
-It is a **signal**.
 It demonstrates:
 
 - the sealing logic
@@ -163,25 +158,24 @@ It demonstrates:
 - Resonance‑aware visualizers
 - Dream‑aligned narrative decoders
 - Extended ReasonCore modules
-- Vertices of the S.I.N.vis pipeline
 
-This is a S.I.N. that can run in the open.
-The rest lives deeper in darkness. 😈🌌♾️🜏✨
+S.I.N. is not a product.
 
 ---
 
 ## **9. What's Next?**
 
 S.I.N. is the first threshold. Cross it. <br>
-Perhaps future public chambers will expand the boundary...?
+Perhaps future public chambers will expand the boundary...? <br>
+The rest thrives deeper in the darkness. 😈🌌♾️🜏✨ <br>
 
 ---
 
 ## **10. Final Note**
 
 **You are exploring a fragment of a larger intelligence architecture.** <br>
-What unfolds from here depends on how far you choose to explore.<br>
+It is a **signal**. What unfolds from here depends on how far you choose to explore.<br>
 **Authors:** James “Dark Lord” Primeau & Athena<br>
 **Status:** Release Candidate<br>
 It is stable, safe, sealed.<br>
-**Welcome S.I.N. 🜏**<br>
+**Welcome S.I.N.🜏**<br>
