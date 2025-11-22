@@ -1,0 +1,11 @@
+{
+  "id": "s1_demo_hint",
+  "ingest_path": "fixtures/s1_demo/narrative_hint.json",
+  "title": "S1 Demo — Signal of First Contact",
+  "summary": "A short vignette used to verify ingest, visualization, and re-ingest flows.",
+  "beats": [
+    "Glyph trace establishes the call-and-response posture",
+    "Whisper loop guides the emotional cadence",
+    "Narrative hint describes the resonance to watch for"
+  ]
+}

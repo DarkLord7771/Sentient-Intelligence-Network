@@ -1,0 +1,181 @@
+{
+  "description": "Synthetic micro-coarticulation inputs for the S1 demo.",
+  "base_frames": [
+    {
+      "timestamp": 0.0,
+      "orientation": [
+        0.999888,
+        0.0,
+        0.014999,
+        0.0
+      ],
+      "confidence": 0.95
+    },
+    {
+      "timestamp": 0.033,
+      "orientation": [
+        0.999842,
+        0.002805,
+        0.013847,
+        0.010832
+      ],
+      "confidence": 0.95
+    },
+    {
+      "timestamp": 0.066,
+      "orientation": [
+        0.999739,
+        0.00544,
+        0.010559,
+        0.019522
+      ],
+      "confidence": 0.95
+    },
+    {
+      "timestamp": 0.099,
+      "orientation": [
+        0.999658,
+        0.007698,
+        0.005625,
+        0.024347
+      ],
+      "confidence": 0.95
+    },
+    {
+      "timestamp": 0.132,
+      "orientation": [
+        0.99966,
+        0.009328,
+        -0.000211,
+        0.024347
+      ],
+      "confidence": 0.95
+    },
+    {
+      "timestamp": 0.165,
+      "orientation": [
+        0.99974,
+        0.010094,
+        -0.006047,
+        0.019512
+      ],
+      "confidence": 0.95
+    }
+  ],
+  "micro_inputs": [
+    {
+      "body_quaternion": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "emotion_quaternion": [
+        0.998888,
+        0.039977,
+        -0.024977,
+        0.001
+      ],
+      "intensity": 0.25,
+      "brightness": 0.2,
+      "phoneme": "AA"
+    },
+    {
+      "body_quaternion": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "emotion_quaternion": [
+        0.995277,
+        0.080795,
+        -0.048213,
+        0.023903
+      ],
+      "intensity": 0.33,
+      "brightness": 0.26,
+      "phoneme": "ER"
+    },
+    {
+      "body_quaternion": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "emotion_quaternion": [
+        0.988867,
+        0.122255,
+        -0.069558,
+        0.048553
+      ],
+      "intensity": 0.41,
+      "brightness": 0.32,
+      "phoneme": "OW"
+    },
+    {
+      "body_quaternion": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "emotion_quaternion": [
+        0.979574,
+        0.164147,
+        -0.088875,
+        0.074779
+      ],
+      "intensity": 0.49,
+      "brightness": 0.38,
+      "phoneme": "IH"
+    },
+    {
+      "body_quaternion": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "emotion_quaternion": [
+        0.96733,
+        0.206254,
+        -0.106046,
+        0.1024
+      ],
+      "intensity": 0.57,
+      "brightness": 0.44,
+      "phoneme": "Y"
+    },
+    {
+      "body_quaternion": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "emotion_quaternion": [
+        0.952086,
+        0.248351,
+        -0.120966,
+        0.131227
+      ],
+      "intensity": 0.65,
+      "brightness": 0.5,
+      "phoneme": "W"
+    }
+  ],
+  "body_frames": [
+    {
+      "timestamp": 0.0,
+      "orientation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "confidence": 0.98
+    }
+  ]
+}

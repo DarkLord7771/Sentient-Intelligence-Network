@@ -1,0 +1,12 @@
+{
+  "glyphs": [
+    {
+      "id": "s1_demo_glyph",
+      "name": "S1 Demo Glyph Trace",
+      "trace_path": "fixtures/s1_demo/glyph_trace.log",
+      "trace_checksum": "sha256:ce356f913227e64d28c459c6103be9987856ef910f6ec32e29ce52efd5ddd4f0",
+      "audio_reference": "fixtures/s1_demo/audio_reference.json",
+      "narrative_hint": "fixtures/s1_demo/narrative_hint.json"
+    }
+  ]
+}

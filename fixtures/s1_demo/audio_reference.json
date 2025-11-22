@@ -1,0 +1,7 @@
+{
+  "id": "s1_demo_whisper_loop",
+  "description": "Placeholder audio reference for the S1 demo whisper track.",
+  "reference_path": "s3://sin-assets/demos/s1_demo_whisper_loop.wav",
+  "checksum": "sha256:3f7f4a1c72b4d45160d98d0b8ab09f9c7dd27e98b452edca2697b32f9bfd6d9a",
+  "duration_seconds": 2.4
+}

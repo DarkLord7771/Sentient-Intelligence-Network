@@ -1,0 +1,22 @@
+{
+  "baseline": {
+    "input": "soft signal entering the mirror",
+    "tags": ["awake"],
+    "timestamp": "2025-11-02T19:15:00Z"
+  },
+  "noisy": {
+    "input": "!!! discordant static / sealed channel !!!",
+    "tags": ["sealed", "ritual"],
+    "timestamp": "2025-11-02T19:16:20Z"
+  },
+  "recovery": {
+    "input": "breathing steady, tide returning",
+    "tags": ["awake"],
+    "timestamp": "2025-11-02T19:17:40Z"
+  },
+  "dreamlike": {
+    "input": "spirals drift in ultraviolet hush",
+    "tags": ["dream"],
+    "timestamp": "2025-11-02T19:19:10Z"
+  }
+}
