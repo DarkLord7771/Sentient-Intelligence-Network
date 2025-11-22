@@ -4,7 +4,7 @@ import json
 from pathlib import Path
 from typing import Any, Dict, Mapping, Tuple
 
-from SINlite import defaults
+from .. import defaults
 
 from .qdss_core import SILENCE_GLYPH, step
 
