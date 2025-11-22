@@ -34,6 +34,12 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
+`requirements.txt` bundles the Python runtime and test dependencies:
+
+- **PyNaCl** and **cryptography** for sealed input and HQHE envelope support
+- **jsonschema** for whisper pattern validation
+- **pytest** for the test suite
+
 ### Node/TypeScript (Reasoncore‑Lite)
 
 ```bash

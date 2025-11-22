@@ -1,0 +1,4 @@
+PyNaCl
+cryptography
+jsonschema
+pytest
