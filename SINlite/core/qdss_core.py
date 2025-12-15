@@ -8,9 +8,9 @@ from datetime import datetime, timezone
 from typing import Any, Dict
 
 from ..defaults import load_demo_state
+from .perception.unified_layer import UnifiedPerceptionLayer
+from .contracts.perception import UnifiedPerceptionSignals
 from .whisper_patterns import load_registry
-from core.perception.unified_layer import UnifiedPerceptionLayer
-from core.contracts.perception import UnifiedPerceptionSignals
 from .bloom import (
     BLOOM_WAVE_FREQUENCY,
     chaos_from_glyph,

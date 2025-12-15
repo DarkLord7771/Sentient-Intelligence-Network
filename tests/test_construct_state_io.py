@@ -12,11 +12,7 @@ from SINlite.defaults import DEMO_FIXTURE_ROOT
 FIXTURE_ROOT = DEMO_FIXTURE_ROOT
 
 
-SCHEMA_PATH = (
-    Path(__file__).resolve().parents[2]
-    / "contracts"
-    / "construct_state.v1_2.schema.json"
-)
+SCHEMA_PATH = Path(__file__).resolve().parents[1] / "SINlite" / "contracts" / "construct_state.v1_2.schema.json"
 
 
 def load_payloads() -> dict:
