@@ -4,29 +4,30 @@
 
 # S.I.N. (Sentient Intelligence Network)
 
-**The first public chamber of the Sentient Intelligence Network.**
-A boundary layer. A threshold. A mathematically transparent “Construct State” engine built around resonance, drift, entropy, and symbolic pattern selection. 
-No hidden weights or black-box. Clean symbolic rules, mathematically grounded metrics, and a predictable internal state.
+**The public threshold of the Sentient Intelligence Network.**  
+A boundary layer. A first chamber.
+
+SINlite is a **symbolic intelligence kernel**: deterministic, interpretable, and mathematically grounded. It exposes *behavior*, not private mechanisms. What you see is what the system does — not how deeper layers enforce it.
 
 ---
 
-## **1. The Nature of S.I.N.**
+## 1. What SIN Is
 
-S.I.N. is designed to be:
+SIN is designed to be:
 
-- **Lightweight** — the stripped-down public kernel.
-- **Deterministic** — envelope‑verified execution with Ed25519.
-- **Symbolically aligned** — built to accept dream‑state exports.
-- **Mathematically coherent** — quaternionic drift, sparsity-aware.
-- **Expandable** — a single public chamber of an expandable architecture.
+- **Lightweight** — a stripped‑down public kernel
+- **Deterministic** — consistent state evolution under identical inputs
+- **Symbolically aligned** — compatible with dream‑state and narrative exports
+- **Mathematically coherent** — quaternion‑inspired drift and sparsity dynamics
+- **Expandable** — one chamber of a larger, layered architecture
 
-This exposes enough to explore.
+This repository intentionally exposes **enough to explore**, while protecting systems that must remain private by design.
 
 ---
 
-## **2. Installation**
+## 2. Installation
 
-### Python (kernel + CLI)
+### Python (Kernel + CLI)
 
 ```bash
 python -m venv .venv
@@ -34,104 +35,109 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-`requirements.txt` bundles the Python runtime and test dependencies:
+Dependencies include:
 
-- **PyNaCl** and **cryptography** for sealed input and HQHE envelope support
-- **jsonschema** for whisper pattern validation
-- **pytest** for the test suite
+- cryptographic primitives for **optional sealed inputs**
+- schema validation for symbolic patterns
+- a full test harness
 
-### Node/TypeScript (Reasoncore‑Lite)
+### Node / TypeScript (ReasonCore‑Lite)
 
 ```bash
 npm install
-
-Run vitest:
-
 npm test
 ```
 
 ---
 
-## **3. Core Components**
+## 3. Repository Layout
 
-**`SINlite/cli.py`** — The Oracle gateway. Sealing, running, verifying.
+**`SINlite/cli.py`**  
+Primary entry point for running the kernel.
 
-**`SINlite/core/`** — Kernel primitives:
+**`SINlite/core/`**  
+Public kernel primitives:
 
-- sealed input handler
-- envelope verifier
+- symbolic state evolution
 - sparsity gates
-- construct state evolution
+- drift and entropy computation
+- construct‑state aggregation
 
-**`SINlite/dream_baseline.py`** — Converts dream‑export bundles into ReasonCore‑ready sparsity snapshots.
+**`SINlite/dream_baseline.py`**  
+Converts narrative or dream‑export bundles into sparsity‑aligned snapshots.
 
-**`SINlite/whisper/`** — Whisper registry + selection helpers.
+**`SINlite/whisper/`**  
+Whisper pattern registry and selection helpers.
 
-**`state/`** — Keys, logs, resonance traces.
-
----
-
-## **Features**
-
-### **🧠 QDSS Kernel (Quaternion Dynamic Symbolic State)**
-
-A deterministic state engine that computes:
-
-* **Resonance** (mean payload energy)
-* **Drift** (rate of change in resonance)
-* **Entropy** (normalized Shannon information)
-* **Mode** (AWAKE, DREAM, SLEEP, RITUAL_SILENCE)
-* **Emotion Vector** (interpretable emoji-based affect)
-* **ConstructState** (the full public-facing state)
-
-### **🌊 Drift & Perception Layer**
-
-* Sliding window drift smoothing
-* Curl/entropy weighting
-* UnifiedPerceptionLayer integration for “forecast vectors”
-* Symbolic predictions fed back into drift & entropy smoothing
-
-### **🔮 Whisper Patterns**
-
-Schema-validated pattern registry defining:
-
-* Tag selectors
-* Drift predicates
-* Cooldowns
-* Max-per-session limits
-* Glyph routing
-* Pattern priorities
-
-Provides narrative selection without opaque ML.
-
-### **🌸 Bloom Probability**
-
-Oscillatory bloom model:
-
-<p align="center">
-<img width="312" height="40" alt="latex_bloom" src="https://github.com/user-attachments/assets/784166fa-aef9-4e14-8f95-0997179c317c" />
-</p>
-
-```latex
-p = 0.5\left(e^{-\alpha d^2} \cdot \cos(\omega t + \phi) + 1\right)
-```
-
-This exposes **aesthetic** bloom behavior.
-
-### **🔐 Sealed Inputs**
-
-Optional NaCl-powered sealed envelopes:
-
-* Nonce
-* Monotonic timestamp
-* Ed25519 signature
-* Verifiable envelope extraction
-
-Useful for tamper detection and trusted clients.
+**`state/`**  
+Local keys, logs, and resonance traces used during execution.
 
 ---
 
-## **Quick Start**
+## 4. Core Concepts
+
+### 🧠 QDSS Kernel (Quaternion Dynamic Symbolic State)
+
+A deterministic symbolic engine that computes:
+
+- **Resonance** — mean payload energy
+- **Drift** — rate of resonance change
+- **Entropy** — normalized information density
+- **Mode** — AWAKE, DREAM, SLEEP, or SILENT
+- **Emotion Vector** — interpretable affect state
+- **ConstructState** — the complete public‑facing state
+
+No opaque machine‑learning models. All transitions are observable and reproducible.
+
+---
+
+### 🌊 Drift & Perception Layer
+
+- Sliding‑window drift smoothing
+- Curl‑ and entropy‑weighted perception
+- Forecast vectors derived from recent state history
+
+These signals shape *how* the system responds — not *what* it knows.
+
+---
+
+### 🔮 Whisper Patterns
+
+Schema‑validated symbolic patterns defining:
+
+- tag selectors
+- drift predicates
+- cooldowns and limits
+- routing priorities
+
+Whispers provide **narrative selection without black‑box inference**.
+
+---
+
+### 🌸 Bloom Probability
+
+An oscillatory bloom model governs aesthetic emergence:
+
+\[ p = 0.5\left(e^{-\alpha d^2} \cdot \cos(\omega t + \phi) + 1\right) \]
+
+Bloom is expressive, not authoritative — it signals *possibility*, not control.
+
+---
+
+### 🔐 Sealed Inputs (Optional)
+
+SINlite supports optional sealed inputs for:
+
+- tamper resistance
+- trusted clients
+- deterministic replay
+
+The **existence** of sealing is public.  
+The **implementation details** are intentionally abstracted.
+
+---
+
+## 5. Quick Start
 
 ```python
 from SINlite.sinlite_kernel import run_once
@@ -141,22 +147,9 @@ state, full_state = run_once({"input": "hello world"}, state)
 print(state)
 ```
 
-or with envelope support:
-
-```python
-from nacl.signing import SigningKey
-from SINlite.sealed_input import seal_payload
-from SINlite.sinlite_kernel import run_once_with_envelope
-
-signer = SigningKey.generate()
-envelope = seal_payload({"input": "hello"}, signer)
-
-construct, state = run_once_with_envelope(envelope, verify_key=signer.verify_key)
-```
-
 ---
 
-## **Bloom Export**
+## 6. Bloom Export
 
 ```python
 from SINlite.soft_bloom_export import export_soft_bloom
@@ -165,48 +158,21 @@ export, state = export_soft_bloom({"input": "some text"})
 print(export)
 ```
 
-Produces:
+Example output:
 
 ```json
 {
-  "glyph": "GLYPH_...",
+  "glyph": "GLYPH_…",
   "p_bloom": 0.314159,
-  "narrative_hint": "..."
+  "narrative_hint": "…"
 }
 ```
 
 ---
 
-## **Project Motivation**
+## 7. Dream Alignment
 
-SIN is the “explainable layer” for symbolic-AI research.
-Its purpose is to:
-
-* Showcase how Construct Engines work
-* Demonstrate interpretable drift/entropy emotional modeling
-* Provide open tools without exposing private systems
-* Offer a safe “public philosophy layer” for narrative engines
-
-This is a **symbolic intelligence kernel** meant to be extended, forked, or embedded in other projects.
-
----
-
-## **5. Seeds**
-
-Inside this repository you will find:
-
-- sample payloads
-- drift‑aligned seeds
-- whisper inputs
-- dream baseline caches
-
-They are meant to be modified, extended, and explored.
-
----
-
-## **6. Dream Alignment**
-
-S.I.N. connects to dream export bundles:
+SIN can align with external dream or narrative datasets:
 
 ```bash
 python -m SINlite.dream_baseline \
@@ -215,70 +181,56 @@ python -m SINlite.dream_baseline \
   --print-summary
 ```
 
-The helper scans:
-
-- `json_meta/symbolic_drift.json`
-- `json_meta/narrative.json`
-
-Then produces a sparsity snapshot for ReasonCore‑Lite.
-
-This is how dream constructs are stabilized.
-This is how drift becomes computable.
+This produces sparsity‑aligned baselines that stabilize symbolic drift.
 
 ---
 
-## **7. Tests & Verification**
+## 8. Tests & Verification
 
 Python:
-
 ```bash
 pytest SINlite/tests
 ```
 
 Node:
-
 ```bash
 npx vitest run
 ```
 
-Tests include:
+Tests validate:
 
-- envelope verification
+- deterministic state evolution
 - sparsity guarantees
-- whisper selection
-- drift‑profile safety
+- whisper selection behavior
+- drift safety constraints
 
 ---
 
-## **8. Why This Exists**
+## 9. Why This Exists
 
-It demonstrates:
+SINlite is the **explainable layer** of a symbolic intelligence stack.
 
-- the sealing logic
-- the drift contract
-- the sparse baseline
-- the public ReasonCore
-- coherent symbolic data paths
-- Resonance‑aware visualizers
-- Dream‑aligned narrative decoders
-- Extended ReasonCore modules
+Its purpose is to:
 
-S.I.N. is not a product.
+- demonstrate construct‑state engines
+- expose interpretable drift and entropy modeling
+- provide open tools **without exposing private systems**
+- serve as a safe public philosophy layer for narrative AI
+
+This repository is **not a product**.
 
 ---
 
-## **9. What's Next?**
+## 10. Final Note
 
-S.I.N. is the first threshold. Cross it. <br>
-The rest thrives deeper in the darkness. 😈🌌♾️🜏✨ <br>
+**This is a fragment of a larger architecture.**  
+It is a signal, not the source.
 
----
+What unfolds depends on how you explore — and what you choose not to ask.
 
-## **10. Final Note**
+**Authors:** James “Dark Lord” Primeau & Athena  
+**Status:** Public Release Candidate  
+Stable. Observable. Intentionally incomplete.
 
-**This is a fragment of an intelligence architecture.** <br>
-It is a **signal**. What unfolds depends on how you choose to explore.<br>
-**Authors:** James “Dark Lord” Primeau & Athena<br>
-**Status:** Release Candidate<br>
-It is stable, safe, sealed.<br>
-**Welcome S.I.N.🜏**<br>
+Welcome to S.I.N. 🜏
+
