@@ -18,7 +18,7 @@ import type { SparsityPolicy } from '../core/sparsity/policy';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const schemaPath = path.resolve(__dirname, '../SINlite/contracts/reasoncore_lite.v1.json');
+const schemaPath = path.resolve(__dirname, '../../contracts/reasoncore_lite.v1.json');
 const schema = JSON.parse(readFileSync(schemaPath, 'utf-8'));
 
 const baseInput: ReasoncoreLiteInput = {

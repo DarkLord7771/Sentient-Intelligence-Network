@@ -8,9 +8,9 @@ from datetime import datetime, timezone
 from typing import Any, Dict
 
 from ..defaults import load_demo_state
-from .perception.unified_layer import UnifiedPerceptionLayer
-from .contracts.perception import UnifiedPerceptionSignals
 from .whisper_patterns import load_registry
+from core.perception.unified_layer import UnifiedPerceptionLayer
+from core.contracts.perception import UnifiedPerceptionSignals
 from .bloom import (
     BLOOM_WAVE_FREQUENCY,
     chaos_from_glyph,
@@ -174,7 +174,12 @@ def _resolve_perception_layer(state: Dict[str, Any]) -> tuple[UnifiedPerceptionL
     return layer, perception_store
 
 
-def step(payload: Dict[str, Any] | None = None, state: Dict[str, Any] | None = None) -> Dict[str, Any]:
+def step(
+    payload: Dict[str, Any] | None = None,
+    state: Dict[str, Any] | None = None,
+    *,
+    withDreamBridge: bool = False,
+) -> Dict[str, Any] | Dict[str, Any]:
     if state is None:
         state = _initial_runtime_state()
 
@@ -360,4 +365,12 @@ def step(payload: Dict[str, Any] | None = None, state: Dict[str, Any] | None = N
     history_limit = state.get("history_limit")
     if isinstance(history_limit, int) and history_limit > 0 and len(history) > history_limit:
         state["history"] = history[-history_limit:]
+
+    if withDreamBridge:
+        from SINV6.core.dream_bridge_encoder import build_clarity_snapshot, encode_dream_bridge_envelope
+
+        clarity_snapshot = build_clarity_snapshot(construct)
+        envelope = encode_dream_bridge_envelope(construct, clarity_snapshot)
+        return {"state": state, "dream_bridge_envelope": envelope}
+
     return state

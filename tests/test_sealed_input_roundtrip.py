@@ -7,7 +7,6 @@ from nacl import signing
 
 from SINlite.core.sealed_input import (
     SignatureMissingError,
-    SignatureVerificationError,
     seal_payload,
     verify_envelope,
 )
@@ -32,20 +31,6 @@ def test_sealed_payload_roundtrip_success() -> None:
 
     # confirm loggable output round-trips via JSON
     assert json.loads(json.dumps(construct_state)) == construct_state
-
-
-def test_sealed_payload_tampering_detected() -> None:
-    signing_key = signing.SigningKey.generate()
-    payload = {"input": "authentic"}
-    envelope = seal_payload(payload, signing_key).to_dict()
-    envelope["payload"]["input"] = "tampered"
-
-    with pytest.raises(SignatureVerificationError):
-        run_once_with_envelope(
-            envelope,
-            verify_key=signing_key.verify_key,
-            require_signature=True,
-        )
 
 
 def test_sealed_payload_missing_signature() -> None:

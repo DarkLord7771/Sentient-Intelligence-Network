@@ -140,7 +140,7 @@ The **implementation details** are intentionally abstracted.
 ## 5. Quick Start
 
 ```python
-from SINlite.core.sinlite_kernel import run_once
+from SINlite.sinlite_kernel import run_once
 
 state = None
 state, full_state = run_once({"input": "hello world"}, state)
@@ -152,7 +152,7 @@ print(state)
 ## 6. Bloom Export
 
 ```python
-from SINlite.core.soft_bloom_export import export_soft_bloom
+from SINlite.soft_bloom_export import export_soft_bloom
 
 export, state = export_soft_bloom({"input": "some text"})
 print(export)

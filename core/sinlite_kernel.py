@@ -5,6 +5,7 @@ from typing import Any, Dict, Tuple
 
 from nacl import signing
 
+from SINlite.contracts import validate_construct_state
 from .qdss_core import step
 from .sealed_input import extract_payload
 
@@ -33,7 +34,7 @@ def run_once(
 
     payload_dict = _coerce_payload(payload)
     runtime_state = step(payload_dict, state)
-    construct_state: Dict[str, Any] = runtime_state["construct_state"]
+    construct_state: Dict[str, Any] = validate_construct_state(runtime_state["construct_state"])
 
     if as_json:
         return json.dumps(construct_state)
@@ -57,7 +58,7 @@ def run_once_with_envelope(
     )
     payload_dict = _coerce_payload(payload_candidate)
     runtime_state = step(payload_dict, state)
-    construct_state: Dict[str, Any] = runtime_state["construct_state"]
+    construct_state: Dict[str, Any] = validate_construct_state(runtime_state["construct_state"])
 
     if as_json:
         return json.dumps(construct_state)

@@ -2,7 +2,7 @@
 
 ## Construct State Export
 
-SINlite exposes the construct runtime telemetry through `SINlite.core.sinlite_kernel.run_once`. The function returns a tuple of the construct state and the full runtime state when invoked with a mapping payload. Construct state objects conform to [`contracts/construct_state.v1_2.schema.json`](../../contracts/construct_state.v1_2.schema.json), extending the v1.1 contract with an optional `narrative_hint` string capped at 280 characters.
+SINlite exposes the construct runtime telemetry through `SINlite.core.sinlite_kernel.run_once`. The function returns a tuple of the construct state and the full runtime state when invoked with a mapping payload. Construct state objects conform to [`contracts/schema/construct_state.schema.json`](../../contracts/schema/construct_state.schema.json), extending the v1.1 contract with an optional `narrative_hint` string capped at 280 characters.
 
 ```python
 from SINlite.core.sinlite_kernel import run_once

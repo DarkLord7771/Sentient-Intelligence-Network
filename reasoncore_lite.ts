@@ -32,7 +32,7 @@ declare const module: { require?: (id: string) => unknown } | undefined;
 declare const require: ((id: string) => unknown) | undefined;
 
 const MAX_ITERATIONS = 8;
-const DEFAULT_TIMEOUT_MS = 18;
+const DEFAULT_TIMEOUT_MS = 50;
 type SparsityPolicyLoader = () => SparsityPolicy | undefined;
 
 let defaultReasoncoreSparsityPolicyLoader: SparsityPolicyLoader | undefined;

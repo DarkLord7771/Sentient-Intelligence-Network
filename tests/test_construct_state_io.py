@@ -1,10 +1,8 @@
 from __future__ import annotations
 
 import json
-from pathlib import Path
 
-from jsonschema import Draft202012Validator
-
+from SINlite.contracts import validate_construct_state
 from SINlite.core.sinlite_kernel import run_once
 from SINlite.defaults import DEMO_FIXTURE_ROOT
 
@@ -12,24 +10,16 @@ from SINlite.defaults import DEMO_FIXTURE_ROOT
 FIXTURE_ROOT = DEMO_FIXTURE_ROOT
 
 
-SCHEMA_PATH = Path(__file__).resolve().parents[1] / "SINlite" / "contracts" / "construct_state.v1_2.schema.json"
-
-
 def load_payloads() -> dict:
     return json.loads((FIXTURE_ROOT / "kernel_inputs.json").read_text())
 
 
-def load_schema() -> dict:
-    return json.loads(SCHEMA_PATH.read_text())
-
-
 def test_io_matches_contract():
     payloads = load_payloads()
-    schema = load_schema()
 
     construct_state, _ = run_once(payloads["baseline"])
+    construct_state = validate_construct_state(construct_state)
 
-    Draft202012Validator(schema).validate(construct_state)
     assert construct_state["mode"] == "AWAKE"
     assert construct_state["glyph"]
     assert construct_state["counter"] >= 1
