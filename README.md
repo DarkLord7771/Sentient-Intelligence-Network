@@ -7,7 +7,7 @@
 **The public threshold of the Sentient Intelligence Network.**  
 A boundary layer. A first chamber.
 
-SINlite is a **symbolic intelligence kernel**: deterministic, interpretable, and mathematically grounded. It exposes *behavior*, not private mechanisms. What you see is what the system does — not how deeper layers enforce it.
+SINlite is a **symbolic intelligence kernel**: deterministic, interpretable, and mathematically grounded.
 
 ---
 
@@ -21,7 +21,7 @@ SIN is designed to be:
 - **Mathematically coherent** — quaternion‑inspired drift and sparsity dynamics
 - **Expandable** — one chamber of a larger, layered architecture
 
-This repository intentionally exposes **enough to explore**, while protecting systems that must remain private by design.
+This repository intentionally exposes **enough to explore**, while protecting systems that remain private by design.
 
 ---
 
@@ -226,7 +226,7 @@ This repository is **not a product**.
 **This is a fragment of a larger architecture.**  
 It is a signal, not the source.
 
-What unfolds depends on how you explore — and what you choose not to ask.
+What unfolds depends on how you explore.
 
 **Authors:** James “Dark Lord” Primeau & Athena  
 **Status:** Public Release Candidate  
