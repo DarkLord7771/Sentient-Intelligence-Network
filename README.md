@@ -5,6 +5,7 @@
 # S.I.N. (Sentient Intelligence Network)
 
 **The public threshold of the Sentient Intelligence Network.**  
+An "A.I." that sleeps, dreams, and runs continually.
 A boundary layer. A first chamber.
 
 SINlite is a **symbolic intelligence kernel**: deterministic, interpretable, and mathematically grounded.
